@@ -1,0 +1,384 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 15px;
+  font-family: sans-serif;
+  font-weight: 500;
+  color: rgb(41, 41, 41);
+}
+
+body {
+  min-height: 100vh;
+  height: 100%;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ul,
+ol,
+figure,
+p {
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 700;
+}
+
+button,
+input,
+textarea {
+  font-size: 1rem;
+  outline: none;
+}
+
+.page-container {
+  width: 980px;
+  display: flex;
+  justify-content: center;
+  margin: auto;
+}
+
+@media (max-width: 768px) {
+  .page-container {
+    width: 80%;
+  }
+}
+
+.page-nav {
+  display: flex;
+  height: 50px;
+  background: rgba(0,0,0,0.8);
+  justify-content: center;
+}
+
+.page-link {
+  color: #FFF;
+  display: flex;
+  align-items: center;
+  flex-grow: 1;
+  flex-shrink: 1;
+  justify-content: center;
+}
+.chapter-nav {
+  display: flex;
+  justify-content: center;
+  background-color: #f6f6f6;
+}
+
+.chapter-link {
+  height: 86px;
+  width: 60px;
+  padding: 0.5rem;
+  display: block;
+  margin: 0 5px;
+}
+
+.chapter-item {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.chapter-icon{
+  height: 55%;
+  display: block;
+}
+
+.chapter-title {
+  padding-top: 5px;
+  font-size: 8px;
+  color: rgba(0,0,0,0.8);
+}
+
+.chapter-link path {
+  fill:#333333;
+}
+
+.chapter-link:hover path{
+  fill: red;
+}
+.main-section {
+  background: #f6f6f6;
+  margin: 30px 0 0 0;
+}
+.iphone8-container {
+  flex-direction: column;
+}
+
+.iphone-text-block {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 50px;
+}
+
+.iphone-text-block > h1 {
+  font-size: 4rem;
+}
+
+.iphone-text-block > h2 {
+  font-size: 2rem;
+}
+
+.iphone-text-block-description {
+  color: #888;
+  margin-top: 15px;
+}
+
+.iphone-text-block-description span:first-child {
+  margin-right: 30px;
+}
+
+.iphoneX-section-img {
+  width: 80%;
+  display: block;
+  margin: auto;
+  padding: 100px 0;
+}
+
+.iPhone8 {
+  background: #f9f0eb;
+  margin: 30px 0 0 0;
+}
+.iphone8-container {
+  flex-direction: column;
+}
+
+.iphone8-text-block {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 50px;
+}
+
+.iphone8-text-block > h1 {
+  font-size: 4rem;
+}
+
+.iphone8-text-block > h2 {
+  font-size: 2rem;
+}
+
+.iphone-text-block-description {
+  color: #888;
+  margin: 10px 0;
+  margin-top: 15px;
+}
+
+.iphone-text-block-description span:first-child {
+  margin-right: 30px;
+}
+
+.iphone8-section-img {
+  width: 50%;
+  display: block;
+  margin: auto;
+}
+
+.text-block-link {
+  color: #0070c9;
+  text-decoration: none;
+  font-size: 0.8rem;
+  margin-top: 10px;
+}
+
+.compere-models-text-block {
+  width: 50%;
+}
+
+.compare-models-container {
+  background: #fafafa;
+  margin-top: 40px;
+}
+
+.compare-models-container {
+  justify-content: space-around;
+  padding-top: 30px;
+}
+
+.compare-models-section-img-container {
+  width: 50%;
+}
+
+.compare-models-section-img-container img {
+  width: 100%;
+  height: 100%;
+}
+
+.compere-models-text-block {
+  padding: 150px 0 0 50px;
+}
+
+@media (max-width: 768px) {
+  .compare-models-container {
+    height: 400px;
+  }
+
+  .compere-models-text-block {
+    flex-shrink: 2;
+  }
+}
+
+.airpods-accessories {
+  margin-top: 40px;
+}
+
+.airpods-container,
+.accessories-container {
+  height: 400px;
+  flex: 1;
+  margin: 0 20px;
+}
+
+.airpods-container {
+  background: url(./assets/images/airpods_medium_2x.jpg) no-repeat center;
+  background-size: cover;
+}
+
+.accessories-container {
+  background: url(./assets/images/accessories_medium_2x.jpg) no-repeat center;
+  background-size: cover;
+}
+
+.airpods-text-block,
+.accessories-text-block {
+  text-align: center;
+  padding-top: 30px;
+}
+
+@media (max-width: 768px) {
+  .airpods-accessories-container {
+    flex-direction: column;
+    height: 600px;
+  }
+  .airpods-container {
+    margin-bottom: 40px;
+  }
+  .accessories-text-block,
+  .airpods-text-block {
+    font-size: 0.8rem;
+  }
+}
+
+.compare-bg {
+  margin-top: 30px;
+}
+.compare-bg-container {
+  height: 500px;
+  background: url(./assets/images/howtoshoot_medium_2x.jpg) no-repeat center;
+  background-size: cover;
+  flex: 1;
+}
+
+.compare-bg-container {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+}
+
+.compare-bg-text-block {
+  color: #fff;
+  font-size: 1.2rem;
+}
+
+.pay-iCloud {
+  margin-top: 30px;
+}
+.pay,
+.iCloud {
+  background: rgb(250, 250, 250);
+  flex: 1;
+  margin: 0 20px;
+}
+
+.pay-img-container img,
+.iCloud-img-container img {
+  width: 100%;
+}
+
+.iCloud-text-block,
+.pay-text-block {
+  text-align: center;
+  font-size: 0.9rem;
+  padding: 50px 20px;
+}
+
+.iCloud-text-block p,
+.pay-text-block p {
+  margin: 10px 0;
+}
+
+@media (max-width: 768px) {
+  .pay-iCloud-container {
+    flex-direction: column;
+    width: 80%;
+  }
+  .pay {
+    margin-bottom: 40px;
+  }
+}
+
+.page-footer {
+  margin-top: 30px;
+  background: #f2f2f2;
+  height: 200px;
+}
+
+.trademark {
+  color: #9b9b9b;
+  font-size: 0.8em;
+  margin-bottom: 20px;
+}
+
+.footer-container {
+  justify-content: flex-start;
+  padding-top: 20px;
+  flex-direction: column;
+}
+
+.footer-link-container a {
+  color: #555;
+  font-size: 0.8rem;
+}
+
+.footer-link-container a:not(:last-child) {
+  border-right: 1px solid lightslategrey;
+  margin-right: 10px;
+  padding-right: 5px;
+}
+
+.footer-link-container a:hover {
+  text-decoration: underline;
+}
+
+
+
+
+/*# sourceMappingURL=hw_6.css.map*/

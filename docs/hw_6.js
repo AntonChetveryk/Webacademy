@@ -86,6 +86,32 @@
 /************************************************************************/
 /******/ ({
 
+/***/ "./src/hw_6/hw_6.css":
+/*!***************************!*\
+  !*** ./src/hw_6/hw_6.css ***!
+  \***************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+// extracted by mini-css-extract-plugin
+
+/***/ }),
+
+/***/ "./src/hw_6/hw_6.js":
+/*!**************************!*\
+  !*** ./src/hw_6/hw_6.js ***!
+  \**************************/
+/*! no exports provided */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _hw_6_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./hw_6.css */ "./src/hw_6/hw_6.css");
+/* harmony import */ var _hw_6_css__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_hw_6_css__WEBPACK_IMPORTED_MODULE_0__);
+
+
+/***/ }),
+
 /***/ 2:
 /*!********************************!*\
   !*** multi ./src/hw_6/hw_6.js ***!
@@ -93,7 +119,7 @@
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-!(function webpackMissingModule() { var e = new Error("Cannot find module './src/hw_6/hw_6.js'"); e.code = 'MODULE_NOT_FOUND'; throw e; }());
+module.exports = __webpack_require__(/*! ./src/hw_6/hw_6.js */"./src/hw_6/hw_6.js");
 
 
 /***/ })
