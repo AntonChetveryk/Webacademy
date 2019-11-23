@@ -1,0 +1,21 @@
+.compare-bg {
+  margin-top: 30px;
+}
+.compare-bg-container {
+  height: 500px;
+  background: url("../assets/images/howtoshoot_medium_2x.jpg") no-repeat center;
+  background-size: cover;
+  flex: 1;
+}
+
+.compare-bg-container {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+}
+
+.compare-bg-text-block {
+  color: #fff;
+  font-size: 1.2rem;
+}

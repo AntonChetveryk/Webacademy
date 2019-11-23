@@ -1,0 +1,36 @@
+.pay-iCloud {
+  margin-top: 30px;
+}
+.pay,
+.iCloud {
+  background: rgb(250, 250, 250);
+  flex: 1;
+  margin: 0 20px;
+}
+
+.pay-img-container img,
+.iCloud-img-container img {
+  width: 100%;
+}
+
+.iCloud-text-block,
+.pay-text-block {
+  text-align: center;
+  font-size: 0.9rem;
+  padding: 50px 20px;
+}
+
+.iCloud-text-block p,
+.pay-text-block p {
+  margin: 10px 0;
+}
+
+@media (max-width: 768px) {
+  .pay-iCloud-container {
+    flex-direction: column;
+    width: 80%;
+  }
+  .pay {
+    margin-bottom: 40px;
+  }
+}

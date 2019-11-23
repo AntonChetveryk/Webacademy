@@ -1,0 +1,32 @@
+.compare-models-container {
+  background: #fafafa;
+  margin-top: 40px;
+}
+
+.compare-models-container {
+  justify-content: space-around;
+  padding-top: 30px;
+}
+
+.compare-models-section-img-container {
+  width: 50%;
+}
+
+.compare-models-section-img-container img {
+  width: 100%;
+  height: 100%;
+}
+
+.compere-models-text-block {
+  padding: 150px 0 0 50px;
+}
+
+@media (max-width: 768px) {
+  .compare-models-container {
+    height: 400px;
+  }
+
+  .compere-models-text-block {
+    flex-shrink: 2;
+  }
+}

@@ -1,0 +1,49 @@
+.iPhone8 {
+  background: #f9f0eb;
+  margin: 30px 0 0 0;
+}
+.iphone8-container {
+  flex-direction: column;
+}
+
+.iphone8-text-block {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 50px;
+}
+
+.iphone8-text-block > h1 {
+  font-size: 4rem;
+}
+
+.iphone8-text-block > h2 {
+  font-size: 2rem;
+}
+
+.iphone-text-block-description {
+  color: #888;
+  margin: 10px 0;
+  margin-top: 15px;
+}
+
+.iphone-text-block-description span:first-child {
+  margin-right: 30px;
+}
+
+.iphone8-section-img {
+  width: 50%;
+  display: block;
+  margin: auto;
+}
+
+.text-block-link {
+  color: #0070c9;
+  text-decoration: none;
+  font-size: 0.8rem;
+  margin-top: 10px;
+}
+
+.compere-models-text-block {
+  width: 50%;
+}

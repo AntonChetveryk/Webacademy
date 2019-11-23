@@ -1,0 +1,40 @@
+.airpods-accessories {
+  margin-top: 40px;
+}
+
+.airpods-container,
+.accessories-container {
+  height: 400px;
+  flex: 1;
+  margin: 0 20px;
+}
+
+.airpods-container {
+  background: url("../assets/images/airpods_medium_2x.jpg") no-repeat center;
+  background-size: cover;
+}
+
+.accessories-container {
+  background: url("../assets/images/accessories_medium_2x.jpg") no-repeat center;
+  background-size: cover;
+}
+
+.airpods-text-block,
+.accessories-text-block {
+  text-align: center;
+  padding-top: 30px;
+}
+
+@media (max-width: 768px) {
+  .airpods-accessories-container {
+    flex-direction: column;
+    height: 600px;
+  }
+  .airpods-container {
+    margin-bottom: 40px;
+  }
+  .accessories-text-block,
+  .airpods-text-block {
+    font-size: 0.8rem;
+  }
+}
