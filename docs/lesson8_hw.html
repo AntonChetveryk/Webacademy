@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+    />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <script src="http://localhost:35729/livereload.js"></script>
+    <title key="title"></title>
+  <link href="/lesson8_hw.css" rel="stylesheet"></head>
+  <body>
+    <nav class="page-nav" id="pageNav">
+      <div class="page-container page-nav-container">
+        <div class="page-nav__logo">
+          <img src="./assets/images/logo.svg" alt="img" />
+        </div>
+        <div class="page-nav__controls">
+          <button class="page-nav__control toggle" id="toggle">
+            <span class="toggle__bar"></span>
+            <span class="toggle__bar"></span>
+          </button>
+        </div>
+        <ul class="page-nav__list">
+          <li class="page-nav__item">
+            <a href="" class="page-link">Wie funktionierts? </a>
+          </li>
+          <li class="page-nav__item">
+            <a href="" class="page-link">Testpartner werden</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <script>
+      toggle.addEventListener("click", () => {
+        pageNav.classList.toggle("page-nav_expand");
+      });
+    </script>
+  <script type="text/javascript" src="/lesson8_hw.js"></script></body>
+</html>

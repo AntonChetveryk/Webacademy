@@ -1,0 +1,5 @@
+@mixin phablet {
+  @media (max-width: $screen-sm) {
+    @content;
+  }
+}

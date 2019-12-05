@@ -7,5 +7,14 @@
   ],
   "hw_6": [
     "./src/hw_6/hw_6.js"
+  ],
+  "lesson8_hw": [
+    "./src/lesson8_hw/lesson8_hw.js"
+  ],
+  "meeting_five": [
+    "./src/meeting_five/meeting_five.js"
+  ],
+  "hangman": [
+    "./src/hangman/hangman.js"
   ]
 }
