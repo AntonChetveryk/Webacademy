@@ -36,4 +36,4 @@ while (remainingLetters > 0 && attemps > 0) {
 }
 alert(answerArray.join(" "));
 
-attemps > 0 ? "Congratulations" : "Try again";
+attemps > 0 ? alert("Congratulations") : alert("Try again");
