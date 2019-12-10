@@ -10,6 +10,7 @@ for (let i = 0; i < word.length; i++) {
 }
 
 let remainingLetters = word.length;
+let newRemainingLetters = remainingLetters;
 
 while (remainingLetters > 0 && attemps > 0) {
   alert(answerArray.join(" ") + ` \n attemps: ${attemps}`);
@@ -31,9 +32,14 @@ while (remainingLetters > 0 && attemps > 0) {
         console.log(remainingLetters);
       }
     }
-    attemps--;
+    if (remainingLetters === newRemainingLetters) {
+      attemps--;
+    }
+    newRemainingLetters = remainingLetters;
   }
 }
 alert(answerArray.join(" "));
 
-attemps > 0 ? alert("Congratulations") : alert("Try again");
+attemps >= 0 && remainingLetters == 0
+  ? alert("Congratulations")
+  : alert("Try again");

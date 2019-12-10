@@ -108,6 +108,7 @@ for (var i = 0; i < word.length; i++) {
 }
 
 var remainingLetters = word.length;
+var newRemainingLetters = remainingLetters;
 
 while (remainingLetters > 0 && attemps > 0) {
   alert(answerArray.join(" ") + " \n attemps: ".concat(attemps));
@@ -130,12 +131,16 @@ while (remainingLetters > 0 && attemps > 0) {
       }
     }
 
-    attemps--;
+    if (remainingLetters === newRemainingLetters) {
+      attemps--;
+    }
+
+    newRemainingLetters = remainingLetters;
   }
 }
 
 alert(answerArray.join(" "));
-attemps > 0 ? alert("Congratulations") : alert("Try again");
+attemps >= 0 && remainingLetters == 0 ? alert("Congratulations") : alert("Try again");
 
 /***/ }),
 
