@@ -16,5 +16,17 @@
   ],
   "hangman": [
     "./src/hangman/hangman.js"
+  ],
+  "lesson_11": [
+    "./src/lesson_11/lesson_11.js"
+  ],
+  "lesson_11_hw": [
+    "./src/lesson_11_hw/lesson_11_hw.js"
+  ],
+  "lesson_12": [
+    "./src/lesson_12/lesson_12.js"
+  ],
+  "lesson_12_hw": [
+    "./src/lesson_12_hw/lesson_12_hw.js"
   ]
 }

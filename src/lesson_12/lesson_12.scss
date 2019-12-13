@@ -1,0 +1,6 @@
+.cool-btn {
+  background: red;
+  &:focus {
+    background: chartreuse;
+  }
+}
