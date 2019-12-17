@@ -3,57 +3,71 @@ import "./lesson_12_hw.scss";
 const colors = document.querySelectorAll(".colors");
 const button = document.querySelector(".toggler");
 const colorsArr = ["green", "yellow", "red"];
+let globalEnabled = false;
+let colorActiveGreen = true;
+let colorActiveRed = true;
+let colorActiveYellow = true;
 
 function toggleOn(button) {
-  button.setAttribute("data-toggler-on", true);
   button.textContent = "Off";
 }
 
 function toggleOff(button) {
-  button.removeAttribute("data-toggler-on");
   button.textContent = "On";
 }
 
-function toggleOnColor(colors, color) {
-  colors[color].setAttribute("data-is-active-color", true);
+function resetColor(colors) {
+  for (let color = 0; color < colors.length; color++) {
+    colors[color].style.background = "none";
+  }
 }
 
-function toggleOffColor(colors, color) {
-  colors[color].removeAttribute("data-is-active-color");
+for (let color = 0; color < colors.length; color++) {
+  colors[color].onclick = () => {
+    resetColor(colors);
+    if (globalEnabled) {
+      switch (colors[color].className) {
+        case "colors green":
+          if (colorActiveGreen) {
+            colors[color].style.background = "green";
+            colorActiveGreen = false;
+            break;
+          } else {
+            colors[color].style.background = "none";
+            colorActiveGreen = true;
+            break;
+          }
+        case "colors yellow":
+          if (colorActiveYellow) {
+            colors[color].style.background = "yellow";
+            colorActiveYellow = false;
+            break;
+          } else {
+            colors[color].style.background = "none";
+            colorActiveYellow = true;
+            break;
+          }
+        case "colors red":
+          if (colorActiveRed) {
+            colors[color].style.background = "red";
+            colorActiveRed = false;
+            break;
+          } else {
+            colors[color].style.background = "none";
+            colorActiveRed = true;
+            break;
+          }
+      }
+    }
+  };
 }
-
-console.log(typeof button.getAttribute("data-toggler-on"));
 
 button.onclick = () => {
-  console.log(typeof button.getAttribute("data-toggler-on"));
-  button.getAttribute("data-toggler-on") ? toggleOff(button) : toggleOn(button);
-  console.log(typeof button.getAttribute("data-toggler-on"));
-  console.log("new click");
-  for (let color = 0; color < colors.length; color++) {
-    if (typeof button.getAttribute("data-toggler-on") === "string") {
-      colors[color].onclick = () => console.log("Hello");
-    }
+  if (globalEnabled) {
+    toggleOff(button);
+    globalEnabled = false;
+  } else {
+    toggleOn(button);
+    globalEnabled = true;
   }
 };
-
-// const isActive = button.getAttribute("data-toggler-on");
-//   console.log(isActive);
-//   !isActive ? toggleOn(button) : toggleOff(button);
-//   console.log(isActive);
-//   for (let color = 0; color < colors.length; color++) {
-//     let isActiveColor = button.getAttribute("data-is-active-color");
-//     console.log(isActiveColor);
-//     if (isActive) {
-//       colors[color].onclick = () => {
-//         if (!colors[color].getAttribute("data-is-active-color")) {
-//           toggleOnColor(colors, color);
-//           colors[color].style.backgroundColor = `${colorsArr[color]}`;
-//         } else {
-//           toggleOffColor(colors, color);
-//           colors[color].style.background = "none";
-//         }
-//       };
-//     }
-//   }
-
-console.log(typeof button.getAttribute("data-toggler-on") === "string");

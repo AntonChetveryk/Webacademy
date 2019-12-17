@@ -28,5 +28,8 @@
   ],
   "lesson_12_hw": [
     "./src/lesson_12_hw/lesson_12_hw.js"
+  ],
+  "meeting_6": [
+    "./src/meeting_6/meeting_6.js"
   ]
 }
