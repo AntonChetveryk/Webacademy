@@ -122,9 +122,9 @@ function resetColor(colors) {
 
 var _loop = function _loop(color) {
   colors[color].onclick = function () {
-    resetColor(colors);
-
     if (globalEnabled) {
+      resetColor(colors);
+
       switch (colors[color].className) {
         case "colors green":
           if (colorActiveGreen) {
