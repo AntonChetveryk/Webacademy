@@ -31,5 +31,8 @@
   ],
   "meeting_6": [
     "./src/meeting_6/meeting_6.js"
+  ],
+  "meeting_6_hw": [
+    "./src/meeting_6_hw/meeting_6_hw.js"
   ]
 }

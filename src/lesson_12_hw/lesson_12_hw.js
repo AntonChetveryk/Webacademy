@@ -25,7 +25,7 @@ function resetColor(colors) {
 for (let color = 0; color < colors.length; color++) {
   colors[color].onclick = () => {
     if (globalEnabled) {
-      resetColor(colors);
+      //resetColor(colors);
       switch (colors[color].className) {
         case "colors green":
           if (colorActiveGreen) {

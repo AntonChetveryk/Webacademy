@@ -81,107 +81,64 @@
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 9);
+/******/ 	return __webpack_require__(__webpack_require__.s = 11);
 /******/ })
 /************************************************************************/
 /******/ ({
 
-/***/ "./src/lesson_12_hw/lesson_12_hw.js":
+/***/ "./src/meeting_6_hw/meeting_6_hw.js":
 /*!******************************************!*\
-  !*** ./src/lesson_12_hw/lesson_12_hw.js ***!
+  !*** ./src/meeting_6_hw/meeting_6_hw.js ***!
   \******************************************/
 /*! no exports provided */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _lesson_12_hw_scss__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./lesson_12_hw.scss */ "./src/lesson_12_hw/lesson_12_hw.scss");
-/* harmony import */ var _lesson_12_hw_scss__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_lesson_12_hw_scss__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _meeting_6_hw_scss__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./meeting_6_hw.scss */ "./src/meeting_6_hw/meeting_6_hw.scss");
+/* harmony import */ var _meeting_6_hw_scss__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_meeting_6_hw_scss__WEBPACK_IMPORTED_MODULE_0__);
 
-var colors = document.querySelectorAll(".colors");
-var button = document.querySelector(".toggler");
-var colorsArr = ["green", "yellow", "red"];
-var globalEnabled = false;
-var colorActiveGreen = true;
-var colorActiveRed = true;
-var colorActiveYellow = true;
+var quantity = Number(prompt("Input quantity of items"));
 
-function toggleOn(button) {
-  button.textContent = "Off";
-}
+var getRandomNumber = function getRandomNumber(max) {
+  return Math.floor(Math.random() * max);
+};
 
-function toggleOff(button) {
-  button.textContent = "On";
-}
+var getRandomColor = function getRandomColor() {
+  return "rgb(".concat(getRandomNumber(255), ", ").concat(getRandomNumber(255), ", ").concat(getRandomNumber(255), ")");
+};
 
-function resetColor(colors) {
-  for (var color = 0; color < colors.length; color++) {
-    colors[color].style.background = "none";
+function creatElements() {
+  for (var el = 0; el < quantity; el++) {
+    var div = document.createElement("div");
+    document.body.append(div);
+    div.className = "item";
   }
 }
 
-var _loop = function _loop(color) {
-  colors[color].onclick = function () {
-    if (globalEnabled) {
-      //resetColor(colors);
-      switch (colors[color].className) {
-        case "colors green":
-          if (colorActiveGreen) {
-            colors[color].style.background = "green";
-            colorActiveGreen = false;
-            break;
-          } else {
-            colors[color].style.background = "none";
-            colorActiveGreen = true;
-            break;
-          }
+creatElements();
 
-        case "colors yellow":
-          if (colorActiveYellow) {
-            colors[color].style.background = "yellow";
-            colorActiveYellow = false;
-            break;
-          } else {
-            colors[color].style.background = "none";
-            colorActiveYellow = true;
-            break;
-          }
+function getFlicker() {
+  var items = document.querySelectorAll(".item");
 
-        case "colors red":
-          if (colorActiveRed) {
-            colors[color].style.background = "red";
-            colorActiveRed = false;
-            break;
-          } else {
-            colors[color].style.background = "none";
-            colorActiveRed = true;
-            break;
-          }
-
-      }
-    }
-  };
-};
-
-for (var color = 0; color < colors.length; color++) {
-  _loop(color);
+  for (var item = 0; item < items.length; item++) {
+    items[item].style.background = getRandomColor();
+  }
 }
 
-button.onclick = function () {
-  if (globalEnabled) {
-    toggleOff(button);
-    globalEnabled = false;
-  } else {
-    toggleOn(button);
-    globalEnabled = true;
-  }
-};
+if (quantity !== 0 && quantity !== NaN) {
+  var interval = setInterval(function () {
+    getFlicker();
+  }, 500);
+} else {
+  alert("Reload page and input number wich is more then 0");
+}
 
 /***/ }),
 
-/***/ "./src/lesson_12_hw/lesson_12_hw.scss":
+/***/ "./src/meeting_6_hw/meeting_6_hw.scss":
 /*!********************************************!*\
-  !*** ./src/lesson_12_hw/lesson_12_hw.scss ***!
+  !*** ./src/meeting_6_hw/meeting_6_hw.scss ***!
   \********************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
@@ -190,17 +147,17 @@ button.onclick = function () {
 
 /***/ }),
 
-/***/ 9:
+/***/ 11:
 /*!************************************************!*\
-  !*** multi ./src/lesson_12_hw/lesson_12_hw.js ***!
+  !*** multi ./src/meeting_6_hw/meeting_6_hw.js ***!
   \************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! ./src/lesson_12_hw/lesson_12_hw.js */"./src/lesson_12_hw/lesson_12_hw.js");
+module.exports = __webpack_require__(/*! ./src/meeting_6_hw/meeting_6_hw.js */"./src/meeting_6_hw/meeting_6_hw.js");
 
 
 /***/ })
 
 /******/ });
-//# sourceMappingURL=lesson_12_hw.js.map
+//# sourceMappingURL=meeting_6_hw.js.map
