@@ -1,0 +1,19 @@
+.container {
+  margin: auto;
+  width: 80%;
+  .section {
+    text-align: center;
+    .sectionTittle {
+      background: lightgray;
+      border: 1px solid black;
+    }
+    .sectionText {
+      display: none;
+      background: lightgreen;
+      border: 1px solid black;
+    }
+    .sectionText.active {
+      display: block;
+    }
+  }
+}

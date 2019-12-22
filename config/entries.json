@@ -34,5 +34,11 @@
   ],
   "meeting_6_hw": [
     "./src/meeting_6_hw/meeting_6_hw.js"
+  ],
+  "lesson13_hw": [
+    "./src/lesson13_hw/lesson13_hw.js"
+  ],
+  "lesson14_hw": [
+    "./src/lesson14_hw/lesson14_hw.js"
   ]
 }
